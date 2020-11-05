@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 1 de Ing. Web</title>
+    
+<link rel="stylesheet" href="./Clase 1 de Ing. Web_files/estilos.css"></head>
+<body>
+    <header class="cabeceraPrincipal">
+        <img class="anime" src="./Clase 1 de Ing. Web_files/clei-logo.png" alt="Logotipo del evento">
+        <h1>V Conferencia de desarrollo de software UTPL 2021</h1>
+    </header>
+    <nav class="menuPrincipal">
+        <a href="http://127.0.0.1:5500/index.html">Inicio</a>
+        <a href="http://127.0.0.1:5500/internas/ponentes.html">Ponentes</a>
+        <a href="http://127.0.0.1:5500/internas/campus.html">Campus</a>
+        <a href="http://127.0.0.1:5500/internas/tarifas.html">Tarifas</a>
+        <a href="http://127.0.0.1:5500/app/registro.php">Registro</a>
+        <a href="http://127.0.0.1:5500/internas/contactos.html">Contáctos</a>
+    </nav>
+    <section class="sliderPrincipal">Slider</section>
+    <section class="servicios">
+        <article class="noticias">
+            <h3>Título de la noticia</h3>
+            <p>Información en curso de la notícia.Información en curso de la notícia.Información en curso de la notícia.Información en curso de la notícia.Información en curso de la notícia.Información en curso de la notícia. </p>
+        </article>
+        <article class="noticias">
+            <h3>Título de la noticia</h3>
+            <p>Información en curso de la notícia.Información en curso de la notícia.Información en curso de la notícia.Información en curso de la notícia.Información en curso de la notícia.Información en curso de la notícia. </p>
+        </article>
+        <article class="noticias">
+            <h3>Título de la noticia</h3>
+            <p>Información en curso de la notícia.Información en curso de la notícia.Información en curso de la notícia.Información en curso de la notícia.Información en curso de la notícia.Información en curso de la notícia. </p>
+        </article>
+    </section>
+    <aside class="modulosPrincipales">
+        <img class="anime2" src="./Clase 1 de Ing. Web_files/cleiorg-1.jpg" alt="Publicidad del evento">
+    </aside>
+    <footer class="piePagina">
+        <h6>Derechos Reservados UTPL 2020 by: @davisalex22</h6>
+    </footer>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>

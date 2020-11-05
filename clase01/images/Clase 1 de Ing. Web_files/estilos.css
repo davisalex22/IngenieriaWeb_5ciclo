@@ -31,7 +31,6 @@ header.cabeceraPrincipal h1{
     width: 60%;
     display: inline-block;
     text-shadow: rgb(36, 36, 36) 2px 2px 1px;
-    text-align: center;
 }
 
 nav.menuPrincipal, .sliderPrincipal,  .modulosPrincipales, .piePagina{
@@ -78,11 +77,20 @@ nav.menuPrincipal a:hover{
     background-color: rgb(31, 32, 32);
     color: rgb(194, 195, 196);
     text-align: center;
+    height: 50px;
+}
+.piePagina h6{
+    padding: 2em 0;
+}
+.modulosPrincipales{
+    height: 50px;
+    width: 50px;
+    margin: 0;
+    padding: 0;
 }
 
-.modulosPrincipales img{
-    max-width: 100%;
-}
+
+
 @media only screen and (max-width: 750px) {
     header.cabeceraPrincipal{
         width: 100%;
