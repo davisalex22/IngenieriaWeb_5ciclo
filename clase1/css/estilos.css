@@ -1,0 +1,551 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif, Verdana, Geneva, Tahoma;
+    background-color: rgb(236, 236, 236);
+}
+
+header.cabeceraPrincipal {
+    background-color: #2c292f;
+    color: #ffffff;
+    width: 90%;
+    margin: 0 auto;
+    border-bottom: 5px solid #000000;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+    background-color: rgb(231, 230, 231);
+}
+
+main section.contenedor {
+    padding: 1em;
+}
+
+header.cabeceraPrincipal img {
+    max-width: 100%;
+    display: inline-block;
+    padding: 1em 1em 2em 6em;
+    vertical-align: top;
+}
+
+header.cabeceraPrincipal h1 {
+    padding: 0.5em;
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+    text-shadow: rgb(36, 36, 36) 2px 3px 1px;
+    font-size: 2em;
+    font-family: 'Open Sans';
+}
+
+nav.menuPrincipal,
+.modulosPrincipales,
+.piePagina {
+    width: 90%;
+    background-color: rgb(8, 51, 87);
+    margin: 0 auto;
+    text-align: center;
+}
+
+nav.menuPrincipal a {
+    color: #ffffff;
+    padding: 6px 30px;
+    text-decoration: none;
+}
+
+nav.menuPrincipal a:hover {
+    background-color: rgb(144, 223, 247);
+    color: rgb(23, 37, 41);
+}
+
+.admin img {
+    display: block;
+    margin: auto;
+    width: 150px;
+    height: 150px;
+}
+
+h4 {
+    text-align: right;
+    padding: 6px 40px;
+}
+
+.grupo {
+    padding: 0.5em 0;
+}
+
+.grupo label {
+    display: block;
+}
+
+.titleHeader {
+    padding: 0.5em;
+    width: 100%;
+    text-align: center;
+    font-family: 'Open Sans';
+}
+
+.sliderPrincipal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container-all {
+    position: relative;
+    max-width: 1000px;
+    width: 100%;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.slide {
+    display: flex;
+    transform: translate3d(0, 0, 0);
+    transition: all 600ms;
+    animation-name: autoplay;
+    animation-duration: 6.5s;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+.item-slide {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    flex-grow: 0;
+    max-width: 100%;
+}
+
+.pagination {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.pagination-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid white;
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.5);
+    margin: 0 10px;
+    text-align: center;
+    transition: all 300ms;
+}
+
+.pagination-item:hover {
+    transform: scale(2);
+}
+
+.pagination-item img {
+    display: inline-block;
+    max-width: none;
+    height: 100%;
+    transform: scale(1);
+    opacity: 0;
+    transition: all 300ms;
+}
+
+.pagination-item:hover img {
+    opacity: 1;
+    transform: scale(1);
+}
+
+input[id="1"]:checked~.slide {
+    animation: none;
+    transform: translate3d(0, 0, 0);
+}
+
+input[id="1"]:checked~.pagination .pagination-item[for="1"] {
+    background: #fff;
+}
+
+input[id="2"]:checked~.slide {
+    animation: none;
+    transform: translate3d(calc(-100% * 1), 0, 0);
+}
+
+input[id="2"]:checked~.pagination .pagination-item[for="2"] {
+    background: #fff;
+}
+
+input[id="3"]:checked~.slide {
+    animation: none;
+    transform: translate3d(calc(-100% * 2), 0, 0);
+}
+
+input[id="3"]:checked~.pagination .pagination-item[for="3"] {
+    background: #fff;
+}
+
+.servicios {
+    width: 90%;
+    background-color: rgb(194, 195, 196);
+    margin: 0 auto;
+    text-align: center;
+}
+
+.grupo {
+    text-align: center;
+}
+
+.grupo input {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 40%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: rgb(8, 51, 87);
+    width: 40%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+}
+
+.reporte {
+    margin: 0 auto;
+}
+
+.tablaReporte {
+    font-family: "Roboto", sans-serif;
+    border-collapse: collapse;
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tablaReporte td,
+.tablaReporte th {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+.tablaReporte tr:nth-child(even) {
+    background-color: #92999f;
+}
+
+.tablaReporte tr:hover {
+    background-color: rgb(161, 187, 218);
+}
+
+.tablaReporte .title {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #337DFF;
+    color: white;
+    font-weight: bold;
+}
+
+.divTarifas {
+    margin-left: 15em;
+}
+
+.servicios article.noticias {
+    width: 30%;
+    display: inline-block;
+}
+
+.servicios article.ponentes {
+    width: 40%;
+    display: inline-block;
+}
+
+.servicios article.tarifas {
+    width: 40%;
+    display: inline-block;
+}
+
+.servicios article.ponentes h3 {
+    font-size: 2em;
+    color: rgb(4, 146, 146);
+    padding: 1em 0 0 0;
+}
+
+.servicios article.tarifas h3 {
+    font-size: 2em;
+    color: rgb(4, 146, 146);
+    padding: 1em 0 0 0;
+}
+
+.servicios article.noticias h3 {
+    font-size: 2em;
+    color: rgb(4, 146, 146);
+    padding: 1em 0 0 0;
+}
+
+.servicios article.ponentes p {
+    display: inline-block;
+    text-align: justify;
+    padding: 1em 1em;
+    color: rgb(58, 59, 58);
+    font-size: 0.9em;
+}
+
+.servicios article.noticias p {
+    display: inline-block;
+    text-align: justify;
+    padding: 1em 1em;
+    color: rgb(58, 59, 58);
+    font-size: 0.9em;
+}
+
+.servicios article.tarifas p {
+    display: inline-block;
+    text-align: justify;
+    padding: 1em 1em;
+    color: rgb(58, 59, 58);
+    font-size: 0.9em;
+}
+
+.modulosPrincipales img {
+    width: 50%;
+}
+
+.modulosPrincipales {
+    margin-top: 10px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    margin: 0 auto;
+}
+
+@media (max-height:800px) {
+    footer {
+        position: static;
+    }
+    header {
+        padding-top: 40px;
+    }
+}
+
+.footer-distributed {
+    background-color: #2c292f;
+    box-sizing: border-box;
+    width: 90%;
+    text-align: left;
+    font: 12px sans-serif;
+    padding: 40px 40px 50px 50px;
+    margin-top: 10px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+    width: 30%;
+}
+
+.footer-distributed h3 {
+    color: #ffffff;
+    font: bold 20px 'Cookie', cursive;
+    margin: 0;
+}
+
+
+/* The company logo */
+
+.footer-distributed .footer-left img {
+    width: 45%;
+}
+
+.footer-distributed h3 span {
+    color: #e0ac1c;
+}
+
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+    color: #ffffff;
+    margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+    width: 35%;
+}
+
+.footer-distributed .footer-center i {
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer-distributed .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    padding: 50px 0px 0px 0px;
+    margin: 0;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+    width: 30%;
+}
+
+.footer-distributed .footer-company-about {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 750px) {
+    header.cabeceraPrincipal {
+        width: 100%;
+        margin: 0 auto;
+        border-bottom: 1px solid #000000;
+    }
+    header.cabeceraPrincipal img {
+        max-width: 100%;
+        display: inline-block;
+        padding: 0.5em 0.5em;
+        vertical-align: top;
+    }
+    header.cabeceraPrincipal h1 {
+        font-size: 1em;
+        padding: 1em;
+        width: 60%;
+        display: inline-block;
+        text-shadow: rgb(36, 36, 36) 2px 2px 1px;
+    }
+    footer {
+        position: static;
+    }
+    header {
+        padding-top: 40px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    header.cabeceraPrincipal {
+        text-align: center;
+    }
+    header.cabeceraPrincipal h1 {
+        font-size: 1em;
+        padding: 1em;
+        width: 100%;
+        display: block;
+        text-shadow: rgb(36, 36, 36) 2px 2px 1px;
+    }
+    nav.menuPrincipal {
+        height: 100xp;
+    }
+    nav.menuPrincipal a {
+        padding: 6px 30px;
+        display: block;
+        background-color: rgb(70, 68, 68);
+    }
+    .servicios article.noticias {
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+    }
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .footer-distributed .footer-center i {
+        margin-left: 0;
+    }
+}
+
+@keyframes autoplay {
+    33% {
+        transform: translate3d(calc(-100% * 0), 0, 0);
+    }
+    66% {
+        transform: translate3d(calc(-100% * 1), 0, 0);
+    }
+    100% {
+        transform: translate3d(calc(-100% * 2), 0, 0);
+    }
+}
